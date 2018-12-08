@@ -148,6 +148,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AllController.cs" />
+    <Compile Include="Controllers\CallController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Test1Controller.cs" />
     <Compile Include="Controllers\TestController.cs" />
@@ -157,6 +159,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -200,9 +203,13 @@
     <Content Include="Views\Test\MyView.cshtml" />
     <Content Include="Views\Test\YourView.cshtml" />
     <Content Include="Views\Test1\GetView.cshtml" />
+    <Content Include="Views\New\Index.cshtml" />
+    <Content Include="Views\Test\GetView.cshtml" />
+    <Content Include="Views\All\AllView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Call\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

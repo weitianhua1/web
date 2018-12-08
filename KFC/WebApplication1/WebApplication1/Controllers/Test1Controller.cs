@@ -28,8 +28,8 @@ namespace WebApplication1.Controllers
             //ViewData["greeting"] = greeting;
             ViewBag.greeting = greeting;
             Customer emp = new Customer();
-            emp.CustomerNmae = "顾客A";
-            emp.Address = "南宁";
+            emp.CustomerNmae = "上帝";
+            emp.Address = "非洲";
             //ViewData["Empkey"] = emp;
             ViewBag.Empkey = emp;
             return View("GetView", emp);
