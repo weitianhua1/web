@@ -13,10 +13,10 @@ namespace WebApplication1.Controllers
         public ActionResult AllView()
         {
             EmployeeViewModel vmEmp = new EmployeeViewModel();
-            vmEmp.Name = "三八";
-            vmEmp.Salary = 9877;
-            vmEmp.CustomerName = "三八";
-            vmEmp.Address = "非洲";
+            //vmEmp.Name = "三八";
+            //vmEmp.Salary = 9877;
+            //vmEmp.CustomerName = "三八";
+            //vmEmp.Address = "非洲";
             return View(vmEmp);
 
         }
