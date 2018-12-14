@@ -178,3 +178,8 @@ D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\bin\zh-Hans\System.Web.We
 D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\Git hub\QAZ\web\KFC\WebApplication1\WebApplication1\bin\zh-Hans\EntityFramework.resources.dll

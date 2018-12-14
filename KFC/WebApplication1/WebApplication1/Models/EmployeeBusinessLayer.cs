@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WebApplication1.Models;
+using WebApplication1.DataAccessLayer;
 
 namespace WebApplication1.Models
 {
@@ -9,23 +11,28 @@ namespace WebApplication1.Models
     {
         public List<Employee> GetEmployeeList()
         {
-            var list = new List<Employee>();
-            Employee emp = new Models.Employee();
-            emp.Name = "三八";
-            emp.Salary = 2999;
-            list.Add(emp);
 
-            emp = new Models.Employee();
-            emp.Name = "三九";
-            emp.Salary = 3000;
-            list.Add(emp);
+            SalesERPDAL salesDal = new SalesERPDAL();
+         
+            //var list = salesDal.Employees.ToList();
+            return salesDal.Employees.ToList();
 
-            emp = new Models.Employee();
-            emp.Name = "四十一";
-            emp.Salary = 1999;
-            list.Add(emp);
+            //Employee emp = new Models.Employee();
+            //emp.Name = "三八";
+            //emp.Salary = 2999;
+            //list.Add(emp);
 
-            return list;
+            //emp = new Models.Employee();
+            //emp.Name = "三九";
+            //emp.Salary = 3000;
+            //list.Add(emp);
+
+            //emp = new Models.Employee();
+            //emp.Name = "四十一";
+            //emp.Salary = 1999;
+            //list.Add(emp);
+
+            //return list;
         }
     }
 }
