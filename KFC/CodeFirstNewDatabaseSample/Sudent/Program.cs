@@ -13,7 +13,7 @@ namespace Sudent
         static void Main(string[] args)
         {
 
-            //crateClass();
+            //crateclass();
             QueryClass();
             Update();
             QueryClass();
