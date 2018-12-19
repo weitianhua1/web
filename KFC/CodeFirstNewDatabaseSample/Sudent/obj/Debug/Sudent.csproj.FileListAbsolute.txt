@@ -1,0 +1,10 @@
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\Sudent.exe.config
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\Sudent.exe
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\Sudent.pdb
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\EntityFramework.dll
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\EntityFramework.xml
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\obj\Debug\Sudent.csprojResolveAssemblyReference.cache
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\obj\Debug\Sudent.exe
+D:\Git hub\QAZ\web\KFC\CodeFirstNewDatabaseSample\Sudent\obj\Debug\Sudent.pdb
