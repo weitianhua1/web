@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CodeFirstNewDatabaseSample.Models;
 using CodeFirstNewDatabaseSample.BusinessLayer;
 using CodeFirstNewDatabaseSample.DataAccessLayer;
+using CodeFirstNewDatabaseSample.BussinessLayer;
 
 namespace CodeFirstNewDatabaseSample
 {
@@ -14,11 +15,12 @@ namespace CodeFirstNewDatabaseSample
         static void Main(string[] args)
         {
             // crateBlog();
-            //QuerBlog();
+            //querblog();
             //Update();
-            //QuerBlog();
+            QuerBlog();
             //Delete();
-            AddPost();
+            //AddPost();
+            DeletePost();
             Console.WriteLine("请按任意键退出");
             Console.ReadKey();
 
@@ -72,6 +74,7 @@ namespace CodeFirstNewDatabaseSample
             using (var db = new BloggingContext())
             {
                 Blog blog = db.Blogs.Find(blogId);
+
                 list = blog.Posts;
             }
             foreach(var item in list)
@@ -121,6 +124,45 @@ namespace CodeFirstNewDatabaseSample
             Blog blog = bbl.Query(id);
             bbl.Delete(blog);
         }
+        //删除贴子
+        static void DeletePost()
+        {
+            QuerBlog();
+            BlogBusinessLayer bbl = new BlogBusinessLayer();
+            PostBussinessLayer pbl = new PostBussinessLayer();
+            
+            Console.WriteLine("请输入一个博客ID");
+            int id = int.Parse(Console.ReadLine());
+            DisplayPosts(id);
+            Console.WriteLine("请输入删除的贴子");
+            int postId = int.Parse(Console.ReadLine());
+            Post post = pbl.QueryPost(postId);
+            pbl.DeletePost(post);
+            DisplayPosts(id);
+        }
+
+        //更新贴子
+        static void UpdatePost()
+        {
+            QuerBlog();
+            BlogBusinessLayer bbl = new BlogBusinessLayer();
+            PostBussinessLayer pbl = new PostBussinessLayer();
+            Console.WriteLine("请输入一个博客ID");
+            int blogId = int.Parse(Console.ReadLine());
+            DisplayPosts(blogId);
+            Console.WriteLine("请输入修改的贴子ID");
+            int postId = int.Parse(Console.ReadLine());
+            Post post = pbl.QueryPost(postId);
+            Console.WriteLine("请输入新标题");
+            string newTitle = Console.ReadLine();
+            post.Title = newTitle;
+            Console.WriteLine("请输入新内容");
+            string newContent = Console.ReadLine();
+            post.Content = newContent;
+            pbl.Update(post);
+            DisplayPosts(blogId);
+        }
+
 
     }
 }
